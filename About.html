@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Page</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="bootstrap.css"
+    />
+    <script src="bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="style.css" class="css" />
+    <script src="index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-info-subtle fixed-top">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand"
+          href="#"
+          style="margin-right: 7%; font-size: 50px; color: red"
+          >🛒ShopNow</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0"
+            style="width: 70%; font-size: 27px"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Home.html"
+                ><i class="fa fa-fw fa-home"></i>Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="About.html">
+                <i class="fa fa-fw fa-info"></i> About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="ContactUs.html"
+              >
+                <i class="fa fa-fw fa-envelope"></i> Contact Us</a
+              >
+            </li>
+          </ul>
+          <!-- <a style="font-size: 50px; color: red">🛒<span id="totalProducts">0</span></a> -->
+          <div style="position: relative">
+            <!-- <a style="font-size: 50px; color: red" href="./bill.html">🛒</a> -->
+            <!-- <a id="cartButton" style="font-size: 50px; color: red" href="./bill.html">🛒</a> -->
+            <a id="cartButton" style="font-size: 50px; color: red" href="./bill.html">🛒</a>
+
+            <span
+              id="totalProducts"
+              style="
+                position: absolute;
+                top: 1px;
+                right: 25px;
+                background-color: red;
+                color: white;
+                border-radius: 50%;
+                padding: 5px;
+              "
+              >0</span
+            >
+          </div>
+
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- start About section -->
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row" style="margin-top: 50px">
+          <div class="col-md-6 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/cont2.webp" alt="" />
+            </div>
+          </div>
+
+          <div class="col-md-6 py-3 py-md-0">
+            <h2>About Us</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+              recusandae ea corrupti eius reiciendis aut expedita sit, nulla
+              distinctio perferendis soluta provident voluptate incidunt cum
+              modi natus eligendi, ipsa laboriosam? Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Repellat eum cupiditate minima
+              temporibus dolor odio distinctio nihil vel? Ea labore numquam
+              quidem quae dolorum debitis doloremque veritatis neque blanditiis
+              maxime? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Iusto, quos aliquam. Cum sunt ratione ab, dignissimos at molestiae
+              consequatur commodi explicabo nam non quae dolor. Ex maiores
+              beatae cupiditate recusandae!
+            </p>
+            <button id="about-btn">Read More...</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end  About section -->
+
+    <!-- <start people section -->
+
+    <div class="aboutContainer">
+      <div class="row">
+        <div class="col-sm-6 col-md-3">
+          <div class="card mb-4">
+            <img src="./images/img-1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Osama Ali</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ea
+                aut, modi debitis accusamus, similique odit cum, hic
+                exercitationem magni
+                <a href="ContactUs.html" class="btn btn-info">
+                  <i class="fa fa-fw fa-envelope"></i> </a
+                >
+              </p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="card mb-4">
+            <img src="./images/img-2.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Ola Mohamed</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ea
+                aut, modi debitis accusamus, similique odit cum, hic
+                exercitationem magni
+                <a href="ContactUs.html" class="btn btn-info">
+                  <i class="fa fa-fw fa-envelope"></i></a
+                >
+              </p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="card mb-4">
+            <img src="./images/img-3.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Ramy Mostafa</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ea
+                aut, modi debitis accusamus, similique odit cum, hic
+                exercitationem magni
+                <a href="ContactUs.html" class="btn btn-info">
+                  <i class="fa fa-fw fa-envelope"></i> </a
+                >
+              </p>
+            
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="card mb-4">
+            <img src="./images/img-1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Mahmoud Rashed</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ea
+                aut, modi debitis accusamus, similique odit cum, hic
+                exercitationem magni
+                <a href="ContactUs.html" class="btn btn-info">
+                  <i class="fa fa-fw fa-envelope"></i> </a
+                >
+              </p>
+          
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <end people section -->
+
+
+
+          <!-- start SERVICE section  -->
+
+    <section class="section_service">
+      <div class="container">
+        <ul class="service-list">
+          <li class="service-item">
+            <div class="service-card">
+              <div class="card-icon">
+                <img
+                  src="./images/service-1.png"
+                  width="53"
+                  height="28"
+                  loading="lazy"
+                  alt="Service icon"
+                />
+              </div>
+
+              <div>
+                <h3 class="h4 card-title">Free Shoping</h3>
+
+                <p class="card-text">All orders over <span>$150</span></p>
+              </div>
+            </div>
+          </li>
+
+          <li class="service-item">
+            <div class="service-card">
+              <div class="card-icon">
+                <img
+                  src="./images/service-2.png" />
+              </div>
+
+              <div>
+                <h3 class="h4 card-title">Quick Payment</h3>
+
+                <p class="card-text">100% secure payment</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="service-item">
+            <div class="service-card">
+              <div class="card-icon">
+                <img
+                  src="./images/service-3.png"
+                  width="40"
+                  height="40"
+                  loading="lazy"
+                  alt="Service icon"
+                />
+              </div>
+
+              <div>
+                <h3 class="h4 card-title">Free Returns</h3>
+
+                <p class="card-text">Money back in 30 days</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="service-item">
+            <div class="service-card">
+              <div class="card-icon">
+                <img
+                  src="./images/service-4.png"
+                  width="40"
+                  height="40"
+                  loading="lazy"
+                  alt="Service icon"
+                />
+              </div>
+
+              <div>
+                <h3 class="h4 card-title">24/7 Support</h3>
+
+                <p class="card-text">Get Quick Support</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- end SERVICE section  -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section spad">
+      <div class="container">
+        <div class="newslatter-form">
+          <div class="row">
+            <div class="col-lg-12">
+              <form action="#">
+                <input type="text" placeholder="Your email address" />
+                <button type="submit">Subscribe to our web site</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="footer-widget">
+          <div class="row">
+            <div class="col-lg-3 col-sm-6">
+              <div class="single-footer-widget">
+                <h4>About us</h4>
+                <ul>
+                  <li>About Us</li>
+                  <li>Community</li>
+                  <li>Jobs</li>
+                  <li>Shipping</li>
+                  <li>Contact Us</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="single-footer-widget">
+                <h4>Customer Care</h4>
+                <ul>
+                  <li>Search</li>
+                  <li>Privacy Policy</li>
+                  <li>2019 Lookbook</li>
+                  <li>Shipping & Delivery</li>
+                  <li>Gallery</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="single-footer-widget">
+                <h4>Our Services</h4>
+                <ul>
+                  <li>Free Shoping</li>
+                  <li>Free Returnes</li>
+                  <li>Our Franchising</li>
+                  <li>Terms and conditions</li>
+                  <li>Privacy Policy</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="single-footer-widget">
+                <h4>Information</h4>
+                <ul>
+                  <li>Payment methods</li>
+                  <li>Times and shipping costs</li>
+                  <li>Product Returns</li>
+                  <li>Shipping methods</li>
+                  <li>Conformity of the products</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- start footer  -->
+    <footer>
+      <div id="footerContent">
+        <!-- Your footer content here -->
+        <div id="socialIcons">
+          <!-- Font Awesome social media icons will be added here -->
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+
+          <p class="copyright">
+            &copy; 2024  coped by Hala Mansour </p>
+  
+      </div>
+    </footer>
+
+    <!-- end  footer  -->
+    <button onclick="topFunction()" id="myBtn">👆</button>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="bootstrap.css"
+    />
+    <script src="bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="style.css" class="css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <style></style>
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-info-subtle fixed-top">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand"
+          href="#"
+          style="margin-right: 7%; font-size: 50px; color: red"
+          >🛒ShopNow</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0"
+            style="width: 70%; font-size: 27px"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Home.html"
+                ><i class="fa fa-fw fa-home"></i>Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="About.html">
+                <i class="fa fa-fw fa-info"></i> About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="ContactUs.html"
+              >
+                <i class="fa fa-fw fa-envelope"></i> Contact Us</a
+              >
+            </li>
+          </ul>
+          <!-- <a style="font-size: 50px; color: red">🛒<span id="totalProducts">0</span></a> -->
+          <div style="position: relative">
+            <a id="cartButton" style="font-size: 50px; color: red">🛒</a>
+
+            <span
+              id="totalProducts"
+              style="
+                position: absolute;
+                top: 1px;
+                right: 25px;
+                background-color: red;
+                color: white;
+                border-radius: 50%;
+                padding: 5px;
+              "
+              >0</span
+            >
+          </div>
+
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- start slider -->
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="images/4.jpeg" style="width: 100%" alt="Slide 1" />
+        <div class="text" style="font-size: 80px">🛒SHOP NOW</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="images/1.jpeg" style="width: 100%" alt="Slide 1" />
+        <div class="text" style="font-size: 80px">🛒SHOP NOW</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="images/2.jpeg" style="width: 100%" alt="Slide 2" />
+        <div class="text" style="font-size: 80px">🛒SHOP NOW</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/3.jpeg" style="width: 100%" alt="Slide 3" />
+        <div class="text" style="font-size: 80px">🛒SHOP NOW</div>
+      </div>
+
+      <!-- Add more slides as needed -->
+
+      <div style="text-align: center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+
+        <!-- Add more dots as needed -->
+      </div>
+    </div>
+    <!-- end slider -->
+
+    <!-- start buttoms category  -->
+    <!-- end buttoms category  -->
+
+    <!-- start category -->
+
+    <div class="container">
+      <h1 class="text-center">Product List</h1>
+      <div class="row" id="productsContainer"></div>
+    </div>
+
+    <div class="container" id="cartSection">
+      <h2 class="text-center">Shopping Cart</h2>
+      <ul id="cartItems"></ul>
+      <p id="totalPrice">Total: $0.00</p>
+      <div id="confirmOrderContainer" style="display: none">
+        <button id="confirmOrderButton" onclick="confirmOrder()">
+          Confirm Order
+        </button>
+      </div>
+    </div>
+
+    <!-- end category -->
+
+    <!-- start SERVICE section  -->
+
+    <section class="section_service">
+      <div class="container">
+        <ul class="service-list">
+          <li class="service-item">
+            <div class="service-card">
+              <div class="card-icon">
+                <img
+                  src="./images/service-1.png"
+                  width="53"
+                  height="28"
+                  loading="lazy"
+                  alt="Service icon"
+                />
+              </div>
+
+              <div>
+                <h3 class="h4 card-title">Free Shoping</h3>
+
+                <p class="card-text">All orders over <span>$150</span></p>
+              </div>
+            </div>
+          </li>
+
+          <li class="service-item">
+            <div class="service-card">
+              <div class="card-icon">
+                <img src="./images/service-2.png" />
+              </div>
+
+              <div>
+                <h3 class="h4 card-title">Quick Payment</h3>
+
+                <p class="card-text">100% secure payment</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="service-item">
+            <div class="service-card">
+              <div class="card-icon">
+                <img
+                  src="./images/service-3.png"
+                  width="40"
+                  height="40"
+                  loading="lazy"
+                  alt="Service icon"
+                />
+              </div>
+
+              <div>
+                <h3 class="h4 card-title">Free Returns</h3>
+
+                <p class="card-text">Money back in 30 days</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="service-item">
+            <div class="service-card">
+              <div class="card-icon">
+                <img
+                  src="./images/service-4.png"
+                  width="40"
+                  height="40"
+                  loading="lazy"
+                  alt="Service icon"
+                />
+              </div>
+
+              <div>
+                <h3 class="h4 card-title">24/7 Support</h3>
+
+                <p class="card-text">Get Quick Support</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- end SERVICE section  -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section spad">
+      <div class="container">
+        <div class="newslatter-form">
+          <div class="row">
+            <div class="col-lg-12">
+              <form action="#">
+                <input type="text" placeholder="Your email address" />
+                <button type="submit">Subscribe to our web site</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="footer-widget">
+          <div class="row">
+            <div class="col-lg-3 col-sm-6">
+              <div class="single-footer-widget">
+                <h4>About us</h4>
+                <ul>
+                  <li>About Us</li>
+                  <li>Community</li>
+                  <li>Jobs</li>
+                  <li>Shipping</li>
+                  <li>Contact Us</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="single-footer-widget">
+                <h4>Customer Care</h4>
+                <ul>
+                  <li>Search</li>
+                  <li>Privacy Policy</li>
+                  <li>2019 Lookbook</li>
+                  <li>Shipping & Delivery</li>
+                  <li>Gallery</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="single-footer-widget">
+                <h4>Our Services</h4>
+                <ul>
+                  <li>Free Shoping</li>
+                  <li>Free Returnes</li>
+                  <li>Our Franchising</li>
+                  <li>Terms and conditions</li>
+                  <li>Privacy Policy</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="single-footer-widget">
+                <h4>Information</h4>
+                <ul>
+                  <li>Payment methods</li>
+                  <li>Times and shipping costs</li>
+                  <li>Product Returns</li>
+                  <li>Shipping methods</li>
+                  <li>Conformity of the products</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- start footer  -->
+    <footer>
+      <div id="footerContent">
+        <!-- Your footer content here -->
+        <div id="socialIcons">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+
+        <p class="copyright">&copy; 2024 coped by Hala Mansour</p>
+      </div>
+    </footer>
+
+    <!-- end  footer  -->
+    <button onclick="topFunction()" id="myBtn">👆</button>
+    <script src="index.js"></script>
+  </body>
+</html>
